@@ -5,7 +5,7 @@ $(document).ready(function(){
          topWindow = $(window).scrollTop();
      $('.animation').each(function(){
       var objectPosition = $(this).offset().top;
-      if(topWindow > objectPosition - windowHeight + 200){
+      if(topWindow > objectPosition - windowHeight /2){
        $(this).addClass("is-animated");
       }
      });
@@ -19,9 +19,13 @@ $(document).ready(function(){
          topWindow = $(window).scrollTop();
      $('.light').each(function(){
       var objectPosition = $(this).offset().top;
-      if(topWindow > objectPosition - windowHeight + 200){
+      if(topWindow > objectPosition - windowHeight + 50){
        $(this).addClass("lightExist");
       }
      });
     });
 
+    window.onload = function() {
+        const loader = document.getElementById('loading');
+        loader.classList.add('loaded');
+      }
