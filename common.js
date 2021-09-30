@@ -11,3 +11,17 @@ $(document).ready(function(){
      });
     });
   });
+
+
+    $('.light').css('visibility','hidden');
+    $(window).scroll(function(){
+     var windowHeight = $(window).height(),
+         topWindow = $(window).scrollTop();
+     $('.light').each(function(){
+      var objectPosition = $(this).offset().top;
+      if(topWindow > objectPosition - windowHeight + 200){
+       $(this).addClass("lightExist");
+      }
+     });
+    });
+
