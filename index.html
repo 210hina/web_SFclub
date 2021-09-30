@@ -13,11 +13,13 @@
     
     <title>SFclub</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <body>
     <div id="page1">
         <div class="bg1">
         <img src="/images/ufo.png" alt="" width="300">
-        <div class="light">
+        <div class="light animation">
             <h1>Hello</h1>
             <p>サイエンス・フィクション・クラブ</p>
         </div>
@@ -26,7 +28,7 @@
 
     <div id="page2">
         <div class="bg2">
-            <p class="welcome_p">ようこそ、我らの基地へ</p>
+            <p id="welcome_p" class="animation">ようこそ、我らの基地へ</p>
         </div>
     </div>
 
@@ -117,5 +119,8 @@
     <footer>
         <p>© science fiction club 2021</p>
     </footer>
+    <!--自作のJS-->
+    <script src="common.js"></script>
 </body>
+
 </html>
