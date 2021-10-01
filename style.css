@@ -993,7 +993,7 @@ footer p {
  .block1{
     color: #CFCCC1;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 50px;
     padding-left: 25px;
  }
@@ -1001,7 +1001,7 @@ footer p {
  .block2{
     color: #CFCCC1;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 50px;
     padding-left: 70px;
  }
@@ -1010,7 +1010,7 @@ footer p {
     height: 250px;
     color: #CFCCC1;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 50px;
     padding-left: 115px;
  }
@@ -1021,7 +1021,7 @@ footer p {
     width: 30px;
     float:right;
     padding-top: 780px;
-    margin-right: 20px;
+    margin-right: 10px;
  }
 
  #disc{
