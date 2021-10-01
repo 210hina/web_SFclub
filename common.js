@@ -19,7 +19,7 @@ $(document).ready(function(){
          topWindow = $(window).scrollTop();
      $('.light').each(function(){
       var objectPosition = $(this).offset().top;
-      if(topWindow > objectPosition - windowHeight + 50){
+      if(topWindow > objectPosition - windowHeight + 200){
        $(this).addClass("lightExist");
       }
      });
@@ -29,3 +29,21 @@ $(document).ready(function(){
         const loader = document.getElementById('loading');
         loader.classList.add('loaded');
       }
+
+  $.scrollify({section:".page"});   
+
+    var current;
+  $.scrollify({
+      section:".page",
+      setHeights:false,
+      before:function(i,page){
+          current = i;
+      },
+  });
+  $(window).on('resize',function(){
+      if(current){
+          var currentScrl = $('.page').eq(current).offset().top;
+          $(window).scrollTop(currentScrl);
+      }
+  });
+  
