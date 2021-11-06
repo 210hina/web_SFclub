@@ -25,6 +25,18 @@ $(document).ready(function(){
      });
     });
 
+    $('.SFlogo').css('visibility','hidden');
+    $(window).scroll(function(){
+     var windowHeight = $(window).height(),
+         topWindow = $(window).scrollTop();
+     $('.SFlogo').each(function(){
+      var objectPosition = $(this).offset().top;
+      if(topWindow > objectPosition - windowHeight + 200){
+       $(this).addClass("logoExist");
+      }
+     });
+    });
+
     window.onload = function() {
         const loader = document.getElementById('loading');
         loader.classList.add('loaded');

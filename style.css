@@ -137,6 +137,12 @@ html{
   animation-fill-mode:both;
 }
  
+.logoExist{
+    animation: slideIn 1.8s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+    visibility: visible !important;
+    animation-fill-mode:both;
+}
+
 @keyframes slideIn {
   0% {
     transform: translateY(-120px);
@@ -155,6 +161,13 @@ html{
 .br-pc{display:block;}
 .br-sp{display: none;}
 
+.home{
+    position: fixed;
+    margin: 40px;
+    padding-left: 40px;
+    z-index: 999;
+}
+
 #page1{
     width: 100%;
     height:auto;
@@ -168,7 +181,7 @@ html{
 .bg1{
     width: 1366px;
     height: 768px;
-    background-image: url(/images/bg1.png);
+    background-image: url(/images/space.png);
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -588,6 +601,42 @@ html{
      margin-top: -100px;
  }
 
+ .mail{
+     width: 100%;
+     height: auto;
+     margin-top: 60px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .text1{
+    color: #CFCCC1;
+    text-align: left;
+    font-size: 35px;  
+    font-weight: 600;
+    margin: 10px;
+    padding-top: 40px;
+    padding-left: 110px;
+ }
+
+ #text2{
+    color: #CFCCC1;
+    text-align: center;
+    font-size: 30px;  
+    font-weight: 600;
+    padding-top: 20px;
+    margin: 10px;
+ }
+
+ #text3{
+    color: #CFCCC1;
+    text-align: center;
+    font-size: 70px;  
+    font-weight: 600;
+    padding-top: 50px;
+    margin: 10px;
+ }
+
  footer {
     width: 100%;
     height: auto; 
@@ -606,6 +655,13 @@ footer p {
     .br-pc{display:none;}
     .br-sp{display:block;}
 
+
+.home{
+    position: fixed;
+    margin: 20px;
+    z-index: 999;
+}
+
 #page1{
     width: 100%;
     height:auto;
@@ -619,7 +675,8 @@ footer p {
 .bg1{
     width: 375px;
     height: 768px;
-    background-image: url(/images/sp/bg1_sp.png);
+    background-image: url(/images/sp/space_sp.png);
+    background-repeat: no-repeat;
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -629,8 +686,8 @@ footer p {
 
 
  .light{
-    width: 430px;
-    height: 532px;
+    width: 375px;
+    height: 570px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -639,27 +696,10 @@ footer p {
     background-size: contain;
  }
 
-#page1 h1{
-    text-align: center;
-    font-family: 'century-gothic',sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 80px;
-    margin-top: 80px;
-    color:#23543A;
-}
-
-#page1 p{
-    width: 260px;
-    font-size: 16px;
-    border: 4px solid;
-    border-color: #23543A;
-    background:#BCC2CE;
-}
 
  #page2{
     width: 100%;
-    height: auto px;
+    height: auto;
     background: #0C0C0C;
     display: flex;
     flex-direction: column;
@@ -679,6 +719,7 @@ footer p {
     width: 375px;
     height: 768px;
     background-image: url(/images/sp/bg2_sp.png);
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
@@ -694,7 +735,7 @@ footer p {
 
 #page3{
     width: 100%;
-    height: auto px;
+    height: auto;
     background: #0C0C0C;
     display: flex;
     flex-direction: column;
@@ -706,6 +747,7 @@ footer p {
     width: 375px;
     height: 768px;
     background-image: url(/images/sp/bg3_sp.png);
+    background-repeat: no-repeat;
     background-size: contain;
  }
 
@@ -734,7 +776,7 @@ footer p {
 
  #page4{
     width: 100%;
-    height: auto px;
+    height: auto;
     background: #0C0C0C;
     display: flex;
     flex-direction: column;
@@ -746,6 +788,7 @@ footer p {
     width: 375px;
     height: 768px;
     background-image: url(/images/sp/bg4_sp.png);
+    background-repeat: no-repeat;
     background-size: contain;
  }
 
@@ -775,7 +818,7 @@ footer p {
 
 #page5{
     width: 100%;
-    height: auto px;
+    height: auto ;
     background: #0C0C0C;
     display: flex;
     flex-direction: column;
@@ -789,6 +832,7 @@ footer p {
     width: 375px;
     height: 768px;
     background-image: url(/images/sp/bg5_sp.png);
+    background-repeat: no-repeat;
     background-size: contain;
  }
 
@@ -829,7 +873,7 @@ footer p {
 
 #page6{
     width: 100%;
-    height: auto px;
+    height: auto;
     background: #0C0C0C;
     display: flex;
     flex-direction: column;
@@ -841,6 +885,7 @@ footer p {
     width: 375px;
     height: 768px;
     background-image: url(/images/sp/bg6_sp.png);
+    background-repeat: no-repeat;
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -865,7 +910,7 @@ footer p {
 
 #page7{
     width: 100%;
-    height: auto px;
+    height: auto;
     background: #0C0C0C;
     display: flex;
     flex-direction: column;
@@ -879,6 +924,7 @@ footer p {
     width: 375px;
     height: 768px;
     background-image: url(/images/sp/bg7_sp.png);
+    background-repeat: no-repeat;
     background-size: contain;
  }
 
@@ -948,6 +994,7 @@ footer p {
     width: 375px;
     height: auto;
     background-image: url(/images/sp/space_sp.png);
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
@@ -1017,11 +1064,7 @@ footer p {
 
 
  .join{
-    
-    width: 30px;
-    float:right;
-    padding-top: 780px;
-    margin-right: 10px;
+    display: none;
  }
 
  #disc{
@@ -1042,10 +1085,44 @@ footer p {
  #star3{
      width: 50px;
      float: right;
-     padding-right: 210px;
-     margin-top: 50px;
+     padding-right: 10px;
+     margin-top: -60px;
  }
 
+ .text1{
+    color: #CFCCC1;
+    text-align: center;
+    font-size: 20px;  
+    font-weight: 600;
+    margin: 10px;
+    padding-top: 30px;
+ }
+
+ .mail{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+ #text2{
+    color: #CFCCC1;
+    text-align: center;
+    font-size: 15px;  
+    font-weight: 600;
+    padding-top: 10px;
+    margin: 10px;
+ }
+
+ #text3{
+    color: #CFCCC1;
+    text-align: center;
+    font-size: 25px;  
+    font-weight: 600;
+    padding-top: 30px;
+    margin: 10px;
+    margin-bottom: 150px;
+ }
 
 
  footer {
